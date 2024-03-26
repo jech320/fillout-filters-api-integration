@@ -1,5 +1,5 @@
-const DEFAULT_PAGINATION_LIMIT = require("./../constants/DEFAULT_PAGINATION_LIMIT.JS");
-const DEFAULT_PAGINATION_OFFSET = require("./../constants/DEFAULT_PAGINATION_OFFSET");
+const DEFAULT_PAGINATION_LIMIT = 150;
+const DEFAULT_PAGINATION_OFFSET = 0;
 
 const paginate = function ({ data, limit, offset }) {
   const resultLimit = isNaN(limit) ? DEFAULT_PAGINATION_LIMIT : limit;
